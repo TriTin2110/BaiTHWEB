@@ -20,31 +20,29 @@
 <body>
         <h1>Contact Us</h1>
         <p>Use the following form to send a message to Example Cafe</p>
-        <div style="margin-top: 30px;">
-                <span style="float: left;">Your email</span>
-                <input id="center" style="margin-left: -8px;" type="text" name="txtEmail" size="30" maxlength="30">
-
-        </div>
-        <br>
-        <div style="display: flex; align-items: center;">
-                <span style="float: left;">Message</span>
-                <textarea id="center" name="txtMess" cols="50" rows="10"
-                        style="margin-left: -8px;margin-top: 0px;"></textarea>
-        </div>
-        <br>
-        <div>
-                <span>How did you hear of us?</span>
-                <select id="center" name="Website" size="1" style="margin-left: 10px;">
-                        <option value="Google">Google</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="Twitter">Twitter</option>
-                </select>
-
-        </div>
-        <span>Newsletter</span>
-        <input style="margin-left: 98px;" type="checkbox">
-        <span>Encure this box is checked if you would like to receive email updates</span>
-        <br>
+        <table>
+                <tr>
+                        <td><label for="YourEmail">Your email</label></td>
+                        <td><input type="text" name="txtYourEmail" id="YourEmail"></td>
+                </tr>
+                <tr>
+                        <td><label for="Message">Message</label></td>
+                        <td><textarea name="txtarea_Mess" id="Message" cols="80" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                        <td><label for="HowHear">How did you hear of us?</label></td>
+                        <td><select name="se_HowHear" id="HowHear">
+                                        <option value="Google">Google</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="Twitter">Twitter</option>
+                                </select></td>
+                </tr>
+                <tr>
+                        <td><label for="NewsLetter">Newsletter</label></td>
+                        <td><input type="checkbox">Ensure this box is checked if you would like to receive email
+                                updates</td>
+                </tr>
+        </table>
         <button>Send message</button>
 </body>
 
