@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                span {
+                        width: 180px;
+                }
+
+                div {
+                        margin-top: -15px;
+                }
+        </style>
+</head>
+
+<body>
+        <h1>Contact Us</h1>
+        <p>Use the following form to send a message to Example Cafe</p>
+        <div style="margin-top: 30px;">
+                <span style="float: left;">Your email</span>
+                <input id="center" style="margin-left: -8px;" type="text" name="txtEmail" size="30" maxlength="30">
+
+        </div>
+        <br>
+        <div style="display: flex; align-items: center;">
+                <span style="float: left;">Message</span>
+                <textarea id="center" name="txtMess" cols="50" rows="10"
+                        style="margin-left: -8px;margin-top: 0px;"></textarea>
+        </div>
+        <br>
+        <div>
+                <span>How did you hear of us?</span>
+                <select id="center" name="Website" size="1" style="margin-left: 10px;">
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Twitter">Twitter</option>
+                </select>
+
+        </div>
+        <span>Newsletter</span>
+        <input style="margin-left: 98px;" type="checkbox">
+        <span>Encure this box is checked if you would like to receive email updates</span>
+        <br>
+        <button>Send message</button>
+</body>
+
+</html>
