@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                p {
+                        margin-top: -15px;
+                }
+
+                span {
+                        margin-top: -15px;
+                }
+        </style>
+</head>
+
+<body>
+        <h1>Travel reservation form</h1>
+        <h3>* denotes mandotory</h3>
+        <br>
+        <div style="margin-top: 5px;">
+                <p>Full name*: <br>
+                        <input type="text" name="txtFullName" placeholder="FirstName LastName">
+                </p>
+                <p>Email address*: <br>
+                        <input type="text" name="txtEmailAddress" placeholder="EMAIL_ADDRESS">
+                </p>
+                <p>Select Tour Package*: <br>
+                        <select name="selTourPackage" size="1">
+                                <option value="Goa">Goa</option>
+                                <option value="Pant">Pant</option>
+                        </select>
+                </p>
+                <p>Arrival date*: <br>
+                        <input type="text" name="txtDate" placeholder="m/d/y">
+                </p>
+                <p>Number of persons*: <br>
+                        <input type="text" name="txtDate" placeholder="UNKNOWN_TYPE">
+                </p>
+                <div style="margin-top: -15px;">What would you want to avail?*</div>
+                <table>
+                        <tr>
+                                <td><label for="Boarding">Boarding</label></td>
+                                <td><input type="checkbox" name="chk_Boarding" id="Boarding"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="Fooding">Fooding</label></td>
+                                <td><input type="checkbox" name="chk_Fooding" id="Fooding"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="Sight seeing">Sight seeing</label></td>
+                                <td><input type="checkbox" name="chk_Sight seeing" id="Sight seeing"></td>
+                        </tr>
+                </table>
+                <table>
+                        <tr>
+                                <td><label for="Discout">Discout Coupon code:</label></td>
+
+                        </tr>
+                        <tr>
+                                <td><input type="text" name="txt_Discout" id="Discout" placeholder="UNKNOWN_TYPE"></td>
+                        </tr>
+                        <tr>
+                                <td><label for="Term&Co">Terns and conditions*</label></td>
+                        </tr>
+                        <tr>
+                                <td><input type="radio" name="agree" id="Term&Co">I agree</td>
+                        </tr>
+                        <tr>
+                                <td><input type="radio" name="agree" id="Term&Co">I disagree</td>
+                        </tr>
+                </table>
+                <button>Complete reservation</button>
+        </div>
+</body>
+
+</html>
