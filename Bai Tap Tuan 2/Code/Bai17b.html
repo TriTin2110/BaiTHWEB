@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+</head>
+
+<body style="margin-top: 15px;">
+        <table>
+                <tr>
+                        <td><label for="Browser">Browser:</label></td>
+                        <td><select name="Browser" id="Browser" size="1">
+                                        <option value=""></option>
+                                        <option value="Google">Google</option>
+                                        <option value="Microsoft Edge">Microsoft Edge</option>
+                                        <option value="Yahoo">Yahoo</option>
+                                </select></td>
+                </tr>
+                <tr>
+                        <td><label for="Username">Username:</label></td>
+                        <td><input type="text" name="txt_Username" id="Username"></td>
+                </tr>
+                <tr>
+                        <td><label for="Encryption">Encryption</label></td>
+                        <td><select name="sel_Encryption" id="Encryption">
+                                        <option value="2048">2048 (High Grade)</option>
+                                        <option value="1024">1024 (Normal Grade)</option>
+                                        <option value="512">512 (Low Grade)</option>
+                                </select></td>
+                </tr>
+        </table>
+        <span>0</span>
+        <input type="range" min="0" max="100" step="1">
+        <span>100</span>
+        <table>
+                <tr>
+                        <td><input type="text"></td>
+                </tr>
+        </table>
+        <table>
+                <tr>
+                        <td><label for="Birthday">Birthday:</label></td>
+                        <td><input type="text" name="txt_Birthday" id="Birthday" placeholder="mm/dd/yyyy"></td>
+                </tr>
+                <tr>
+                        <td><label for="Color">Set your favorite color:</label></td>
+                        <td><input type="color" name="col_Color" id="Color"></td>
+                </tr>
+                <tr>
+                        <td><label for="Birthday(M&Y)">Birthday (month and year):</label></td>
+                        <td><input type="text" name="txt_Birthday(M&Y)" id="Birthday(M&Y)" value="--------- ----">
+                        </td>
+                </tr>
+                <tr>
+                        <td><label for="Sel_week">Select a week:</label></td>
+                        <td><input type="text" name="Sel_week" id="Birthday(M&Y)" value="Week --, ----">
+                        </td>
+                </tr>
+                <tr>
+                        <td><label for="Sel_time">Select a time:</label></td>
+                        <td><input type="text" name="Sel_week" id="Birthday(M&Y)" value="--:-- --">
+                        </td>
+                </tr>
+                <tr>
+                        <td><label for="Birthday(D&T)">Birthday (date and time):</label></td>
+                        <td><input type="text" name="txt_Birthday(D&T)" id="Birthday(D&T)" value="--------- ----">
+                        </td>
+                </tr>
+                <tr>
+                        <td><label for="E-mail">E-mail:</label></td>
+                        <td><input type="text" name="txt_E-mail" id="E-mail"></td>
+                </tr>
+                <tr>
+                        <td><label for="SeGoogle">Search Google:</label></td>
+                        <td><input type="text" name="txt_SeGoogle" id="SeGoogle"></td>
+                </tr>
+                <tr>
+                        <td><label for="Tel">Telephone:</label></td>
+                        <td><input type="text" name="txt_Tel" id="Tel"></td>
+                </tr>
+                <tr>
+                        <td><label for="Homepage">Add your homepage:</label></td>
+                        <td><input type="text" name="txt_Homepage" id="Homepage"></td>
+                </tr>
+        </table>
+        <button>Submit</button>
+        <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier)</p>
+</body>
+
+</html>
