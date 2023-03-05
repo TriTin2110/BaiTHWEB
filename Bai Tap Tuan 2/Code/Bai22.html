@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                #flex_container {
+                        display: flex;
+                }
+
+                #header_logo {
+                        background-color: blue;
+                        width: 150px;
+                        height: 155px;
+                        margin-top: -11px;
+                        box-shadow: 0px 10px 50px;
+                }
+
+                #header {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #EEEEEE;
+                        height: 152px;
+                        width: 70.8%;
+                        margin-top: -8px;
+                }
+
+                #header_top {
+                        display: flex;
+                        justify-content: space-between;
+                }
+
+                #header_bottom {
+                        display: flex;
+                        margin-top: 50px;
+                        color: #4D6F88;
+                }
+
+                #header_decorate_feildtext {
+                        background-color: #E8E7E7;
+                        width: 245px;
+                        height: 13px;
+                        border-radius: 5px;
+                        border-style: outset;
+                        border-color: #c9c9c9 white white #c9c9c9;
+                        border-bottom: 0.8px;
+                        border-right: 0.8px;
+                        margin-top: 10px;
+                        margin-left: 20px;
+                        font-size: 20px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                }
+
+                #line {
+                        transform: rotate(90deg);
+                        height: 1px;
+                        width: 50px;
+                        background-color: #f8f8f8;
+                        margin-left: -17px;
+                        margin-top: 12px;
+                        margin-right: -28px;
+                }
+
+                #left_bar {
+                        float: left;
+                        display: inline-block;
+                        background-color: #EEEEEE;
+                        width: 225px;
+                        height: 448px;
+                }
+
+                #left_bar_box {
+                        margin-top: 40px;
+                        font-size: 24px;
+                        background-color: #E7E6E6;
+                        width: 235px;
+                        height: 75px;
+                        float: left;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.721);
+                        color: #1D435F;
+                        /* In đậm text */
+                        font-weight: bold;
+                }
+
+                #content {
+                        width: 100%;
+                        height: 55vh;
+                        /* height: 547px; */
+                }
+
+                #content_txt_top {
+                        flex-direction: column;
+                        display: flex;
+                        margin-left: 15px;
+                        margin-top: 30px;
+                        font-size: 30px;
+                }
+
+                #content_decoration {
+                        border-bottom: 2px solid #ABC1D1;
+                        color: #0A3065;
+                }
+
+                #right_side {
+                        background-color: red;
+                        height: 150px;
+                        width: 30px;
+                        display: inline-block;
+                }
+        </style>
+</head>
+
+<body style="width: 1000px;">
+        <div id="flex_container">
+                <div id="header_logo">
+                        <img width="150px" height="155px" src="Icon/Icon_Bai_22/logo.jpg" alt="empty">
+                </div>
+                <div id="header">
+                        <div id="header_top" style="font-size: 15px;">
+                                <fieldset id="header_decorate_feildtext">
+                                        <span style="margin-left: 5px; font-size: 17px;">View:</span>
+                                        <span style="margin-left: 20px; font-size: 17px;">desktop <span
+                                                        style="text-decoration: underline #A8BFCF;margin-left: 10px; color: #9B888F; font-size: 17px;">mobile</span>
+                                                <span
+                                                        style="text-decoration: underline  #A8BFCF;margin-left: 10px; color: #9B888F; font-size: 17px;">print</span>
+                                </fieldset>
+
+                                <span>
+                                        <select name="List" size="1"
+                                                style="width: 300px; height: 30px; font-size: 18px; margin-top: 10px;">
+                                                <option value="W3C By Region">W3C By Region</option>
+                                        </select>
+                                        <button
+                                                style="background-color: black; color: white; height: 26px; margin-right: 20px; border-radius: 3px; font-size: 17px;">Go</button>
+                                </span>
+
+                        </div>
+                        <div id="header_bottom">
+                                <div style="margin-left: 25px; font-size: 18px;">
+                                        STANDARDS
+                                </div>
+                                <hr id="line">
+                                <div style="font-size: 18px; margin-left: 20px;">
+                                        PARTICIPATE
+                                </div>
+                                <hr id="line">
+                                <div style="font-size: 18px; margin-left: 20px;">
+                                        MEMBERSHIP
+                                </div>
+                                <hr id="line">
+                                <div style="font-size: 18px; margin-left: 20px;">
+                                        ABOUT W3C
+                                </div>
+                        </div>
+                        <div style="display: flex; justify-content: end; margin-top: 0px; margin-right: 20px;">
+                                <input type="text" name="txt_Search"
+                                        style="width: 130px; height: 30px; border-width: 1px; border-radius: 3px; border-color: black #D1D1D1 #D1D1D1 #D1D1D1;background-image: url(Icon/Icon_Bai_22/Search_Box.jpg); background-repeat: no-repeat; background-size: 135px 35px;">
+                        </div>
+                </div>
+        </div>
+        <div id="left_bar">
+                <div id="left_bar_box">
+                        <div>
+                                TECHNICAL REPORTS
+                                <img width="15px" height="15px" src="Icon/Icon_Bai_22/Icon_Left_Bar.jpg" alt="empty">
+
+                        </div>
+                </div>
+                <br>
+                <div style=" float: left; margin-top: 25px; margin-left: 45px; font-size: 19px; color: #1D435F;">
+                        <div>
+                                By date
+                        </div>
+                        <hr width="150px"
+                                style="margin-left: -15px; background-color: #DEDEDE; height: 2px; border: none;">
+                        <div>
+                                By group
+                        </div>
+                        <hr width="150px"
+                                style="margin-left: -15px; background-color: #DEDEDE; height: 1.5px; border: none;">
+                </div>
+                <div id="left_bar_box" style="margin-top: 15px;">
+                        <div>
+                                WEB AND INDUSTRY
+                                <img width="15px" height="15px" src="Icon/Icon_Bai_22/Icon_Left_Bar.jpg" alt="empty">
+
+                        </div>
+                </div>
+                <div style=" float: left; margin-top: 25px; margin-left: 45px; font-size: 19px; color: #1D435F">
+                        <div>
+                                Automotive
+                        </div>
+                        <hr width="150px"
+                                style="margin-left: -15px; background-color: #DEDEDE; height: 2px; border: none;">
+                        <div>
+                                Digital <br> Publishing
+                        </div>
+                </div>
+        </div>
+        <div id="content">
+                <!-- Right side -->
+                <div
+                        style="height: 150px; width: 150px; display: inline-block; float: right; margin-right: 14%; margin-top: -10px;">
+                        <p style="font-size: 20px; margin-left: 55px; color: #EEEEEE;">▶
+                                <span style="color: black;">Skip</span> ◀
+                        </p>
+                        <p style="font-size: 20px; margin-top: 15px; color: #29688E;">The world Wide Web Consortium
+                                (W3C) is an
+                                international community
+                                that
+                                develops open <span id="content_decoration">standards</span> to ensure the long-term
+                                growth of the
+                                Web. Read about the <span id="content_decoration">W3C mission.</span></p>
+                        <div
+                                style="margin-top: 10px; background-color: #FCFBFB; color: #1D435F; font-weight: bold; text-align: center;width: 145px;height: 30px; display: flex; align-items: center; box-shadow: 0px 3px 2px rgba(128, 128, 128, 0.571);">
+                                <div style="margin-top: 0px; margin-left: 5px;">
+                                        W3C BLOG
+                                </div>
+                                <img width="12px" height="15px" src="Icon/Icon_Bai_22/Icon_Left_Bar.jpg" alt="empty"
+                                        style="margin-left: 4px; margin-top: -1px;">
+                        </div>
+                        <p style="font-size: 20px; color: #0A3065;">WICG: Evolving the Web from the ground up</p>
+                </div>
+                <!-- Khung thứ nhất -->
+                <div
+                        style="background-color: #F1F7FB; height: 148px; width: 44%; display: inline-block; margin-left: 25px; margin-top: 32px;">
+                        <!-- Điều chỉnh khung -->
+                        <div id="content_txt_top"> <!-- id="content_txt_top" = điều chỉnh nội dung trong khung -->
+                                <span style="font-size: 30px; margin-top: -10px;">▾
+                                        <span> MathML 3.0 Becomes ISO/IEC INternational Standard</span>
+                                </span>
+                                <p style="font-size: 18px;">23 June 2015 |
+                                        <span id="content_decoration">Archive</span>
+                                </p>
+                        </div>
+                        <hr style="margin-top: 0px; background-color: #E2E3E3; height: 1px; border: none;">
+                </div>
+                <!-- Khung thứ hai -->
+                <div
+                        style="width: 44%; height: 265px; display: inline-block; background-color: #EEEEEE;margin-left: 25px; margin-top: -10px;">
+                        <div style="margin-top: 30px; margin-left: 15px;">
+                                <span style="font-size: 21px;">Today the <span id="content_decoration"
+                                                style="color: #3075CB;">World Wide Web
+                                                Consortium
+                                                (W3C)</span>, together with the <span id="content_decoration">Joint
+                                                Technical Committee JTC 1, Information Technology</span> of the
+                                        International Organization for Standardization (ISO) and the International
+                                        Electrotechnucal Commission (IEC), announced approval of the <span
+                                                id="content_decoration">MathML Version 3.0 2nd Edition</span> as an
+                                        ISO?IEC International Standard (ISO?IEC 40314:2015). <br>MathML 3.0 is the
+                                        mark-up language used in</span>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html>
