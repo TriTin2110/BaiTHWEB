@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                #flex_container {
+                        display: flex;
+                        flex-direction: row;
+                }
+
+                #picture {
+                        background-color: white;
+                        height: 400px;
+                        width: 250px;
+                        border: dashed 1px gray;
+
+                }
+
+                #menu {
+                        background-color: #1760B1;
+                        height: 44px;
+                        width: 530px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        font-size: 17px;
+                        margin-left: 16px;
+                        padding-right: 10px;
+                }
+
+                #td {
+                        height: 50px;
+                        border-right: 2px solid white;
+                        padding-right: 20px;
+                        padding-top: 30px;
+                        margin-left: -15px;
+                        margin-top: 80px;
+                        color: white;
+                }
+
+                #table_content {
+                        background-color: #FFFFFF;
+                        height: 560px;
+                        width: 540px;
+                        margin-top: 68px;
+                        margin-left: -540px;
+                }
+
+                #td_content {
+                        border-right: 1px solid #F0EEE2;
+                        border-bottom: 1px solid #F0EEE2;
+                        font-size: 17px;
+
+                }
+
+                #td_text_content {
+                        color: #043697;
+                        font-size: 17px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+                }
+
+                #current_game {
+                        display: flex;
+                        flex-direction: column;
+                        color: white;
+                        background-color: #092F84;
+                        height: 203px;
+                        width: 241px;
+                        padding-left: 10px;
+                        font-size: 12.5px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                #current_game_table {
+                        border: solid 1px white;
+                        margin-left: -5px;
+                        margin-right: 5px;
+                        padding-left: 1.5px;
+                        padding-right: 1.5px;
+                        padding-top: 1.5px;
+                        padding-bottom: 1.5px;
+                }
+
+                #tr_current_game {
+                        border: solid 1px #4D688E;
+                        background-color: #01285F;
+                        padding-left: 5px;
+                }
+        </style>
+</head>
+
+<body style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <!-- Tạo flex container chứa picture, menu, table_content và current_game -->
+        <div id="flex_container">
+                <!-- flex giữa tiêu đề và ảnh -->
+                <div style="display: flex; flex-direction: column;">
+                        <div id="picture">
+                                <div
+                                        style="display: flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 15px;">
+                                        <h2 style="font-size: 28px; color: #6A6A6A;">GAME
+                                                <h2 style="color: #B1B1B1; font-size: 28px;">ZONE</h2>
+
+                                </div>
+                                </h2>
+                                <img src="Icon/Icon_Bai_23/girl.jpg" alt="empty" style="margin-top: -15px;"
+                                        width="250px" height="322px" ;>
+                        </div>
+                        <div id="current_game">
+                                <i style="margin-top: 10px; font-size: 23px; font-family:serif;">current
+                                        games</i>
+                                <table id="current_game_table">
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">Golden Eye 007</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">Harry Potter & the Chamber of Secret</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">Prince of Perisa: Sands of Time</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">Resident Evil: Code Veronica X</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">The Legend of Zelda: Majora's Mask</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <li type="square">Tomb Raider: The Lost Artifact</li>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td id="tr_current_game">
+                                                        <a href="#" style="margin-left: 140px; color: white;">More
+                                                                Games</a>
+                                                </td>
+                                        </tr>
+                                </table>
+                        </div>
+
+                </div>
+                <div id="menu">
+                        <table style="width: 500px; ">
+                                <tr style="display: flex; justify-content: space-around;">
+                                        <td id="td" style="padding-left: 50px;">Home</td>
+                                        <td id="td">Reviews</td>
+                                        <td id="td">Gallery</td>
+                                        <td id="td">Community</td>
+                                        <td id="td" style="border: none; margin-right: 10px;">Contact</td>
+                                <tr>
+                                        <td id="td">
+                                                <hr style="background-color: rgb(138, 137, 137) ;height: 2px; margin-top: -72px; padding-left: -10px; margin-left: 31px;"
+                                                        width="540px">
+                                        </td>
+
+                                </tr>
+                                </tr>
+                        </table>
+                </div>
+                <div id="table_content">
+                        <table style="width: 540px; text-align: left; border: 1px solid #F0EEE2;">
+                                <tr style="background-color: #003399; height: 50px; color: #C6D3EA;">
+                                        <td id="td_content"></td>
+                                        <td id="td_content"></td>
+                                        <td id="td_content">Mã</td>
+                                        <td id="td_content">Tên review</td>
+                                        <td id="td_content">Nội dung review</td>
+                                        <td id="td_content" style="border-right: none;">Loại</td>
+                                </tr>
+                                <!-- World of Warcraft -->
+                                <tr id="td_text_content">
+                                        <td id="td_content"><a href="#">Xem</a></td>
+                                        <td id="td_content"><a href="#">Xóa</a></td>
+                                        <td id="td_content">0022</td>
+                                        <td id="td_content">World of Warcraft</td>
+                                        <td id="td_content">Nếu bạn là một thần dân trong thế giới thần thoại Azeroth...
+                                        </td>
+                                        <td id="td_content" style="border-right: none;">Thông báo</td>
+                                </tr>
+                                <!-- [PES2009] Kĩ Thuật - Chiến Thuật & Đội Hình -->
+                                <tr id="td_text_content">
+                                        <td id="td_content"><a href="#">Xem</a></td>
+                                        <td id="td_content"><a href="#">Xóa</a></td>
+                                        <td id="td_content">0032</td>
+                                        <td id="td_content">[PES2009] Kĩ Thuật - Chiến Thuật & Đội Hình</td>
+                                        <td id="td_content">Kĩ Thuật - Chiến Thuật & Đội Hình
+                                        </td>
+                                        <td id="td_content" style="border-right: none;">Dành cho thành viên</td>
+                                </tr>
+                                <!-- Võ lâm truyền kỳ -->
+                                <tr id="td_text_content">
+                                        <td id="td_content"><a href="#">Xem</a></td>
+                                        <td id="td_content"><a href="#">Xóa</a></td>
+                                        <td id="td_content">0011</td>
+                                        <td id="td_content">Võ lâm truyền kỳ cập nhật phiên bản chống
+                                                chặn cổng</td>
+                                        <td id="td_content">Lần cập nhật này cũng sữa lỗi bán tất cả vật phẩm bang hội
+                                                về 0 lượng....
+                                        </td>
+                                        <td id="td_content" style="border-right: none;">Thông tin</td>
+                                </tr>
+                                <!-- Tiên Kiếm Online -->
+                                <tr id="td_text_content">
+                                        <td id="td_content"><a href="#">Xem</a></td>
+                                        <td id="td_content"><a href="#">Xóa</a></td>
+                                        <td id="td_content">0031</td>
+                                        <td id="td_content">Tiên Kiếm Online sẽ Closed Beta vào ngày 22/12</td>
+                                        <td id="td_content">Game có 6 lớp nhân vật là Kiếm Dành cho
+                                                khách, Đạo khách, Luyện khí sư,...
+                                        </td>
+                                        <td id="td_content" style="border-right: none;">Dành cho thành viên</td>
+                                </tr>
+                                <!-- Cổ Long -->
+                                <tr id="td_text_content">
+                                        <td id="td_content" style="border-bottom: none;"><a href="#">Xem</a></td>
+                                        <td id="td_content" style="border-bottom: none;"><a href="#">Xóa</a></td>
+                                        <td id="td_content" style="border-bottom: none;">0021</td>
+                                        <td id="td_content" style="border-bottom: none;">Cổ Long - game kiếm hiệp đánh
+                                                theo lượt Closed Beta 26/12
+                                        </td>
+                                        <td id="td_content" style="border-bottom: none;">Trò chơi lấy bối cảnh từ bộ
+                                                tiểu
+                                                thuyết Cổ Long với những nhân
+                                                vật đại hiệp trường nghĩa...
+                                        </td>
+                                        <td id="td_content" style="border-right: none; border-bottom: none;">Thông báo
+                                        </td>
+                                </tr>
+                        </table>
+                        <div
+                                style="background-color: #99CCCC; width: 60px; height: 35px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; align-items: center;">
+                                1 <a href="#" style="margin-left: 4px;">2</a></div>
+                </div>
+        </div>
+        <div
+                style="margin-left: 580px;margin-top: -10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 12px; color: #9E9E9E;">
+                ©
+                Copyright XXX, All rights reversed</div>
+
+</body>
+
+</html>
