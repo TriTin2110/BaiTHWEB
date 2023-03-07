@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 28px;
+    }
+    
+    #left {
+        display: flex;
+        width: 350px;
+    }
+    
+    #right {
+        display: flex;
+        width: 500px;
+        align-items: center;
+    }
+    
+    #center {
+        margin-top: 10px;
+    }
+    
+    .leftitem {
+        color: #686E77;
+        padding-left: 23px;
+    }
+    
+    .rightitem {
+        color: #797B7E;
+    }
+    
+    input::placeholder {
+        color: #E8EAED;
+        ;
+    }
+    
+    #image_bottom_menu {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 55px;
+        margin-top: 4px;
+        color: #323842;
+    }
+    
+    .image_bottom_menu_content {
+        margin-top: -300px;
+        margin-left: 128px;
+        display: flex;
+        width: 450px;
+    }
+    
+    #sort_by_option {
+        margin-left: 128px;
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+
+
+<body>
+    <div id="menu-container">
+        <div id="left">
+            <div class="leftitem">Shop</div>
+            <div class="leftitem">Offers</div>
+            <div class="leftitem">Our Story</div>
+            <div class="leftitem">Blog</div>
+        </div>
+        <div id="center">
+            <img src="logo.png" alt="">
+        </div>
+        <div id="right">
+            <div class="rightitem">
+                <input type="text" style="width: 158px; height: 30px; margin-right: -13px; border: 1px solid #D3D5D9; border-radius: 5px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px; background-size: 14px 14px; padding-left: 34px; font-size: 14px;"
+                    placeholder="Search product...">
+            </div>
+            <div class="rightitem"><img src="Cart.PNG" alt="empty" width="18px" height="18px" style="margin-left: 25px;"></div>
+            <div class="rightitem" style="margin-left: 8px;">Cart (0)</div>
+            <div class="rightitem"><img src="User.PNG" width="18px" height="17px" style="margin-top: 5px; margin-left: 18.5px;">
+            </div>
+        </div>
+    </div>
+    <div id="image_bottom_menu">
+        <img src="Capture.PNG" width="1442px" height="392px">
+        <div class="image_bottom_menu_content">
+            <b>
+                Gift for your skin
+            <p style="font-size: 21px; margin-top: 6px; font-weight: 400;">Aliquip fugiat ipsum nostrud ex et eu incididunt quis minim dolore excepteur voluptate</p>
+    
+        </div>
+    </div>
+    <div id="sort_by_option">
+        <div>All product</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
