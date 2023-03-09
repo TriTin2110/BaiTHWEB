@@ -9,42 +9,45 @@
 </head>
 <style>
     #menu-container {
+        width: 1500px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-left: 28px;
     }
-    
+
     #left {
         display: flex;
         width: 350px;
     }
-    
+
     #right {
         display: flex;
         width: 500px;
         align-items: center;
+        margin-right: -20px;
     }
-    
+
     #center {
-        margin-top: 10px;
+        margin-top: 8px;
+        margin-left: 25px;
     }
-    
+
     .leftitem {
         color: #686E77;
-        padding-left: 23px;
+        padding-left: 22px;
     }
-    
+
     .rightitem {
         color: #797B7E;
     }
-    
+
     input::placeholder {
         color: #E8EAED;
         ;
     }
-    
-    #image_bottom_menu {
+
+    #image_bottom {
         display: flex;
         flex-direction: column;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -52,23 +55,139 @@
         margin-top: 4px;
         color: #323842;
     }
-    
-    .image_bottom_menu_content {
+
+    .image_bottom_menu {
         margin-top: -300px;
         margin-left: 128px;
         display: flex;
         width: 450px;
     }
-    
+
     #sort_by_option {
+        font-weight: 400;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 63px;
         margin-left: 128px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 1237px;
+    }
+
+    /* Những nút lựa chọn bên trái */
+    #sort_content_left {
+        width: 185px;
+        height: 50px;
+        color: #459D7A;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sort_content_right {
+        width: 183px;
+        height: 50px;
+        color: #459D7A;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list {
+        margin-top: 53px;
+        margin-left: 128px;
+        width: 300px;
+    }
+
+    #product_image {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 4px;
+        margin-left: 6px;
+    }
+
+    #product_note {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        right: 42px;
+        top: 14px;
+        background-color: #FFC970;
+        width: 78px;
+        height: 28px;
+        border-radius: 10px;
+        color: #956518;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #product_list_label {
+        width: 298px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #3A3C40;
+    }
+
+    #product_list_description {
+        color: #34373B;
+        width: 298px;
+    }
+
+    #pruduct_current_price {
+        font-weight: bold;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 298px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #pruduct_old_price {
+        color: #B7BAC1;
+        font-weight: 100;
+        margin-left: 8px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    #buy_icon {
+        position: absolute;
+        margin-left: 226px;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: row;
+        margin-left: -10px;
+        justify-content: space-around;
+    }
+
+    td {
+        width: 295px;
+    }
+
+    #page_number {
+        margin-top: 95px;
+        margin-left: 15cm;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 267px;
     }
 </style>
 
 
-<body>
+<body style="display: flex; flex-direction: column;">
     <div id="menu-container">
         <div id="left">
             <div class="leftitem">Shop</div>
@@ -77,34 +196,275 @@
             <div class="leftitem">Blog</div>
         </div>
         <div id="center">
-            <img src="logo.png" alt="">
+            <img src="logo.png" width="150px" height="47px">
         </div>
         <div id="right">
             <div class="rightitem">
-                <input type="text" style="width: 158px; height: 30px; margin-right: -13px; border: 1px solid #D3D5D9; border-radius: 5px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px; background-size: 14px 14px; padding-left: 34px; font-size: 14px;"
+                <input type="text"
+                    style="width: 158px; height: 30px; margin-right: -13px; border: 1px solid #D3D5D9; border-radius: 5px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px; background-size: 14px 14px; padding-left: 34px; font-size: 14px;"
                     placeholder="Search product...">
             </div>
-            <div class="rightitem"><img src="Cart.PNG" alt="empty" width="18px" height="18px" style="margin-left: 25px;"></div>
+            <div class="rightitem"><img src="Cart.PNG" alt="empty" width="18px" height="18px"
+                    style="margin-left: 25px;"></div>
             <div class="rightitem" style="margin-left: 8px;">Cart (0)</div>
-            <div class="rightitem"><img src="User.PNG" width="18px" height="17px" style="margin-top: 5px; margin-left: 18.5px;">
+            <div class="rightitem"><img src="User.PNG" width="18px" height="17px"
+                    style="margin-top: 5px; margin-left: 24.5px;">
             </div>
         </div>
     </div>
-    <div id="image_bottom_menu">
+
+    <div id="image_bottom">
         <img src="Capture.PNG" width="1442px" height="392px">
-        <div class="image_bottom_menu_content">
-            <b>
-                Gift for your skin
-            <p style="font-size: 21px; margin-top: 6px; font-weight: 400;">Aliquip fugiat ipsum nostrud ex et eu incididunt quis minim dolore excepteur voluptate</p>
-    
+        <div>
+            <div class="image_bottom_menu">
+                <b>
+                    Gift for your skin
+                    <p style="font-size: 21px; margin-top: 6px; font-weight: 400;">Aliquip fugiat ipsum nostrud ex et eu
+                        incididunt quis minim dolore excepteur voluptate</p>
+                </b>
+            </div>
         </div>
     </div>
+
     <div id="sort_by_option">
-        <div>All product</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="sort_content_left" style="background-color: #459D7A; color: white; border-radius: 5px;">
+            All Products</div>
+        <div id="sort_content_left" style="border-right: #459D7A 1px solid; margin-left: -506px; margin-right: 80px;">
+            Face</div>
+        <div id="sort_content_left" style="margin-left: -594px;">Body</div>
+
+        <div id="sort_content_right" style="float: right;">
+            <input type="text"
+                style="width: 170px; height: 54px; margin-left: -313px; border-bottom: 1px solid #D3D5D9; border-top: white 1px; border-left: 1px white; border-right: 1px white; border-radius: 1px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px; background-size: 24px 24px; padding-left: 44px; font-size: 14px;"
+                placeholder="Search product...">
+            <span
+                style="margin-left:24px;background-color: #F3F4F6; width: 134px; height: 54px; display: flex; justify-content: center; align-items: center; color: #9A9FA8; font-size: 20px;">Sort
+                by <img src="IconList.jpg" style="margin-left: 10px;"></span>
+        </div>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div id="product_list">
+        <table>
+            <tr>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img src="Image 1 (1).png"></td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img src="Image 1 (2).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img src="Image 1 (3).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img src="Image 1 (4).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+            <!-- Hàng thứ 1 -->
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$32
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$22
+                        <p id="pruduct_old_price">$28</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$18
+                        <p id="pruduct_old_price">$26</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$48
+                        <p id="pruduct_old_price">$56</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Hàng thứ 2 -->
+            <tr style="margin-top: 101px;">
+                <td id="product_image"><img src="Image 1 (5).png"></td>
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="Image 1 (6).png" alt="">
+                </td>
+                <td id="product_image"><img src="Image 1 (7).png" alt="">
+                </td>
+                <td id="product_image"><img src="Image 1 (8).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$31
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$40
+                        <p id="pruduct_old_price">$48</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$26
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$18
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Hàng thứ 3 -->
+            <tr style="margin-top: 101px;">
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="Image 1 (9).png"></td>
+                <td id="product_image"><img src="Image 1 (10).png" alt="">
+                </td>
+                <td id="product_image"><img src="Image 1 (11).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="Image 1 (12).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$52
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$47
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$44
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$32
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Số trang web -->
+    <div id="page_number">
+        <div>&#60 </div>
+        <div>1</div>
+        <div
+            style="color: #7CBAA1; background-color: #F4FAF8; width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+            2</div>
+        <div>3</div>
+        <div>4</div>
+        <div> ></div>
     </div>
 </body>
 
