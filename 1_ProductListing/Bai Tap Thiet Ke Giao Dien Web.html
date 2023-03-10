@@ -184,6 +184,105 @@
         align-items: center;
         width: 267px;
     }
+
+    #footer {
+        margin-top: 97px;
+        background-color: #1D2128;
+        height: 380px;
+        display: flex;
+        flex-direction: row;
+        width: 1442px;
+        justify-content: space-between;
+    }
+
+    #footer_left_side {
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 92px;
+        margin-top: 100px;
+        color: #DEE1E6;
+        width: 150px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    #footer_label_left_side {
+        font-size: 23px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #footer_container_left_side {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer_left_content {
+        margin-top: 20px;
+        margin-left: -111px;
+    }
+
+    #select_option {
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 7px;
+        height: 36px;
+        width: 128px;
+        background-color: #1D2128;
+        color: #DEE1E6;
+        border: 1px solid #DEE1E6;
+    }
+
+    #footer_container_right_side {
+        margin-top: 100px;
+        margin-right: 130px;
+    }
+
+    #footer_label_right_side {
+        color: #DEE1E6;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    #footer_right_content {
+        color: #DEE1E6;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    #footer_right_text_box {
+        color: #DEE1E6;
+        border: 1px solid #DEE1E6;
+        border-right: none;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        width: 208px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #button_subscribe {
+        color: #DEE1E6;
+        background-color: #459D7A;
+        font-size: 15px;
+        height: 59px;
+        width: 128px;
+        margin-left: -11px;
+        border: solid #1D2128;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-left: none;
+    }
+
+    #footer_source {
+        margin-top: 30px;
+        color: #CBCED3;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 </style>
 
 
@@ -235,7 +334,7 @@
 
         <div id="sort_content_right" style="float: right;">
             <input type="text"
-                style="width: 170px; height: 54px; margin-left: -313px; border-bottom: 1px solid #D3D5D9; border-top: white 1px; border-left: 1px white; border-right: 1px white; border-radius: 1px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px; background-size: 24px 24px; padding-left: 44px; font-size: 14px;"
+                style="width: 170px; height: 54px; margin-left: -313px; border-bottom: 1px solid #D3D5D9; border-top: white 1px; border-left: 1px white; border-right: 1px white; border-radius: 1px; background-image: url(search_glass.PNG); background-repeat: no-repeat; background-position: 13px 20px; background-size: 24px 24px; padding-left: 44px; font-size: 14px;"
                 placeholder="Search product...">
             <span
                 style="margin-left:24px;background-color: #F3F4F6; width: 134px; height: 54px; display: flex; justify-content: center; align-items: center; color: #9A9FA8; font-size: 20px;">Sort
@@ -465,6 +564,58 @@
         <div>3</div>
         <div>4</div>
         <div> ></div>
+    </div>
+    <div id="footer">
+
+        <div id="footer_container_left_side">
+            <!-- Cột thứ 1 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side">Abort</div>
+                <div style="margin-top: 20px;">Home</div>
+                <div style="margin-top: 20px;">Shop</div>
+                <div style="margin-top: 20px;">Our story</div>
+                <div style="margin-top: 20px;">Blog</div>
+                <select id="select_option" name="Country" size="1" style="margin-top: 20px;">
+                    <option value="English">English</option>
+                    <option value="Vietnamese">Tiếng Việt</option>
+                </select>
+            </div>
+
+            <!-- Cột thứ 2 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side" style="margin-left: -111px;">Help</div>
+                <div id="footer_left_content">Shipping & Returns</div>
+                <div id="footer_left_content">Track Order</div>
+                <div id="footer_left_content">FAQs</div>
+            </div>
+
+            <!-- Cột thứ 3 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side" style="margin-left: -215px;">Contact</div>
+                <div style="margin-top: 20px; margin-left: -215px;">Phone:</div>
+                <b style="margin-top: 20px; margin-left: -215px;">(+1) 123 456 7893</b>
+                <div style="margin-top: 20px; margin-left: -215px;">Email:</div>
+                <b style="margin-top: 20px; margin-left: -215px;">name@email.com</b>
+            </div>
+        </div>
+
+        <!-- Nội dung bên phải footer -->
+        <div id="footer_container_right_side">
+            <div id="footer_label_right_side">Receive new promotions</div>
+            <div id="footer_right_content">Duis ea tempor commodo amet reprehende</div>
+            <div id="footer_right_content"><input id="footer_right_text_box" type="text"
+                    style="display: inline;background-image: url(MailBox.jpg); background-repeat: no-repeat; background-color: #1D2128; background-size: 22px 19px; background-position: 20px 16px; padding-left: 55px;"
+                    placeholder="Input your email">
+                <span><button id="button_subscribe">Subscribe</button></span>
+            </div>
+            <div style="margin-top: 30px;">
+                <img src="Twitter 1.png" style="margin-right: 6px;">
+                <img src="Facebook 1.png" style="margin-right: 6px;">
+                <img src="LinkedIn 1.png" style="margin-right: 6px;">
+                <img src="YouTube 1.png" style="margin-right: 6px;">
+            </div>
+            <div id="footer_source">© 2022 Brand, Inc. &#8226 Privacy &#8226 Terms &#8226 Sitemap</div>
+        </div>
     </div>
 </body>
 
