@@ -166,7 +166,85 @@
         }
 
         #right_side {
-            width: 300px;
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #right_side_top {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            width: 400px;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        #right_side_add {
+            border: 1px solid #E97492;
+            color: #E34D73;
+            border-radius: 4px;
+            height: 30px;
+            width: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #right_side_avatar {
+            margin-top: 16px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 400px;
+        }
+
+        #right_side_bottom {
+            margin-top: 40px;
+            margin-left: 31px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #right_side_bottom_avatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 220px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #right_side_bottom_messenger {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 49px;
+            width: 340px;
+            border-radius: 4px;
+            background-color: #F8F9FA;
+            height: 70px;
+        }
+
+        #right_side_bottom_messenger_text {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+
+        #right_side_bottom_typing {
+            margin-left: 3px;
+            margin-top: 6px;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     </style>
 </head>
@@ -255,8 +333,114 @@
 
 
         <!-- Right Side -->
-        <div id="right_side"></div>
-    </div>
+        <div id="right_side">
+            <div id="right_side_top">
+                <span
+                    style="font-family: Arial, Helvetica, sans-serif; font-size: 23px; font-weight: bold; display: flex; align-items: center;">Participants
+                    <div
+                        style="font-size: 14px; font-weight: lighter;margin-left: 10px; background-color: #FDF2F4; color: #E34D73; border-radius: 50%; width: 27px; height: 27px; display: flex; justify-content: center; align-items: center;">
+                        4</div>
+                </span>
+                <span id="right_side_add">+<span style="font-size: 15px;">Add</span></span>
+            </div>
+
+            <div>
+                <div id="right_side_avatar">
+                    <div
+                        style="display: flex; align-items: center; width: 210px; justify-content:space-evenly; margin-left: -15px; margin-top: 16px;">
+                        <img src="Avatar/avatar 1322.png">
+                        <span>Benjamin
+                            Crawford</span>
+                    </div>
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; width: 80px; margin-top: 16px;">
+                        <img src="Icon/mic1.png" alt=""> <img src="Icon/cam_small.png" alt=""> <img src="Icon/More.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div id="right_side_avatar">
+                    <div
+                        style="display: flex; align-items: center; width: 180px; justify-content:space-evenly; margin-left: -15px;">
+                        <img src="Avatar/avatar 1323.png">
+                        <span>Christian
+                            Scott</span>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 80px;"><img
+                            src="Icon/mic1.png" alt=""> <img src="Icon/cam_small.png" alt=""> <img src="Icon/More.jpg"
+                            alt=""></div>
+                </div>
+                <div id="right_side_avatar">
+                    <div
+                        style="display: flex; align-items: center; width: 160px; justify-content:space-evenly; margin-left: -9px;">
+                        <img src="Avatar/avatar 1324.png">
+                        <span>Deborah
+                            Chu</span>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 80px;"><img
+                            src="Icon/mic2.png" alt=""> <img src="Icon/cam_small.png" alt=""> <img src="Icon/More.jpg"
+                            alt=""></div>
+                </div>
+                <div id="right_side_avatar">
+                    <div
+                        style="display: flex; align-items: center; width: 180px; justify-content:space-evenly; margin-left: -15px;">
+                        <img src="Avatar/avatar 1325.png">
+                        <span>Jordan Nieves</span>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: space-between; width: 80px;"><img
+                            src="Icon/mic2.png" alt=""> <img src="Icon/cam_small.png" alt=""> <img src="Icon/More.jpg"
+                            alt=""></div>
+                </div>
+            </div>
+
+            <div style="border-bottom: 2px solid #EFF1F3; margin-top: 30px; width: 400px;"></div>
+
+            <div id="right_side_bottom">
+                <div style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold;">Chat</div>
+
+                <div id="right_side_bottom_avatar" style="margin-top: 40px;">
+                    <img src="Avatar/avatar 1326.png">
+                    <b>Deborah Chu</b>
+                    <div style="color: #9095A0;">1:12 PM</div>
+                </div>
+                <div id="right_side_bottom_messenger">
+                    <div id="right_side_bottom_messenger_text">Lorem excepteur magna voluptate exercitation dolore
+                        execitation
+                        amet</div>
+                </div>
+
+                <div id="right_side_bottom_avatar" style="margin-top: 20px;">
+                    <img src="Avatar/avatar 1327.png">
+                    <b>Jordan Nieves</b>
+                    <div style="color: #9095A0;">1:12 PM</div>
+                </div>
+                <div id="right_side_bottom_messenger">
+                    <div id="right_side_bottom_messenger_text">Eiusmod laborum culpa est magna cillum sint in elit
+                        proident magna anim consecte</div>
+                </div>
+
+                <div id="right_side_bottom_avatar" style="margin-top: 20px; width: 265px;">
+                    <img src="Avatar/avatar 1328.png">
+                    <b>Benjamin Crawford</b>
+                    <div style="color: #9095A0;">1:12 PM</div>
+                </div>
+                <div id="right_side_bottom_messenger" style="height: 50px; width: 110px; background-color: #FDF2F4;">
+                    <div id="right_side_bottom_messenger_text" style="text-align: center;">🥰🥰🥰</div>
+                </div>
+
+                <div id="right_side_bottom_avatar" style="margin-top: 20px; width: 160px;">
+                    <img src="Avatar/avatar 1329.png">
+                    <b>Christian Scott</b>
+                </div>
+
+                <div id="right_side_bottom_typing">
+                    <input type="text" placeholder="Add" title="Typing..."
+                        style="width: 300px;height: 35px; background-color: #F3F4F6; border: none; border-radius: 2px;">
+                    <img src="Icon/Emotion.jpg" style="height: 37px; margin-left: -10px;">
+                    <img src="Icon/send.png" style="margin-left: 18px;">
+                </div>
+
+            </div>
+        </div>
 </body>
 
 </html>
