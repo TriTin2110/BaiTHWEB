@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex_container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #left_side {
+            border-right: 1px solid #F3F3F4;
+            display: flex;
+            flex-direction: column;
+            width: 143px;
+        }
+
+        #logo_left_side {
+            margin-top: 33px;
+            margin-left: 80px;
+            display: flex;
+            height: 52px;
+        }
+
+        #icon_left_side {
+            margin-left: 90px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 47px;
+        }
+
+        #center {
+            display: flex;
+            flex-direction: column;
+            width: 909px;
+            border-right: 1px solid #F5F5F5;
+        }
+
+
+        #content_header {
+            margin-top: 38px;
+            margin-left: 38px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 909px;
+        }
+
+        #button_record {
+            color: red;
+            border: 1px solid red;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-left: 600px;
+            border-radius: 20px;
+            width: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #cotent_center_top {
+            height: 22px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            width: 350px;
+            justify-content: space-around;
+            margin-left: 30px;
+            margin-top: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+        }
+
+        #button_info {
+            width: 60px;
+            height: 25px;
+            color: white;
+            font-size: 11px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #E34D73;
+            border: 1px solid red;
+            border-radius: 20px;
+            padding-left: 5px;
+            padding-right: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #content_center_middle_image {
+            margin-top: 26px;
+            margin-left: 38px;
+            position: relative;
+            display: flex;
+        }
+
+        #content_center_middle_text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 25px;
+            border: 1px solid #747577;
+            border-radius: 4px;
+            height: 30px;
+            width: 155px;
+            background-color: #747577;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+
+        #content_center_bottom_text {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 7px;
+            color: white;
+            border: 1px solid #303336;
+            background-color: #303336;
+            opacity: 0.7;
+            width: 110px;
+            height: 25px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #cotent_center_bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 833px;
+            margin-left: 38px;
+            margin-top: 25px;
+        }
+
+        #button_center_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 895px;
+        }
+
+        #end_meeting {
+            border: 1px solid #F22128;
+            border-radius: 4px;
+            background-color: #F22128;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 120px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #right_side {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flex_container">
+        <!-- Left Side -->
+        <div id="left_side">
+            <div id="logo_left_side">
+                <img src="Icon/logo.png" style="width: 52px;">
+            </div>
+            <div id="icon_left_side">
+                <img src="Icon/home.png" style="width: 32px; height: 33px">
+                <img src="Icon/chatting.png" style="width: 32px; height: 33px; margin-top: 42px;">
+                <img src="Icon/calender.png" style="width: 32px; height: 33px; margin-top: 42px;">
+                <img src="Icon/cam.png" style="width: 54px; height: 54px; margin-top: 42px; margin-left: -10px;">
+                <img src="Icon/user.png" style="width: 32px; height: 33px; margin-top: 42px;">
+                <img src="Avatar/avatar.png" style="width: 47px; height: 45px; margin-top: 277px; margin-left: -10px;">
+                <img src="Icon/setting.png" style="width: 57px; height: 55px; margin-left: -16px; margin-top: 16px;">
+            </div>
+        </div>
+
+
+
+
+        <!-- Center -->
+        <div id="center">
+            <div id="content_header_main"></div>
+            <div id="content_header">
+                <div style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 23px;">Meeting
+                    title</div>
+                <div id="button_record"> <span style="font-size: 30px;">&bull;</span><span
+                        style="display: flex; align-items: center;">12:00</span></div>
+            </div>
+            <div id="cotent_center_top">
+                <div id="button_info"><img src="Icon/Annotation 2023-03-14 112148.png"> Internal</div>
+                <img src="Icon/calender_small.png">
+                <p>Sep 02, 2022</p>
+                <p style="color: #E7E9EC">|</p>
+                <p>08:00 - 09:00 AM</p>
+            </div>
+            <div id="content_center_middle_image">
+                <span id="content_center_middle_text"> <span
+                        style="font-size: xx-large; color: #3ED44D;">&bullet;</span>
+                    Benjamin Crawford
+                </span>
+                <img src="Icon/mic_color.png" style="position: absolute; margin-left: 20.35cm; margin-top: 13px;">
+                <img src="Image/img_big.png">
+            </div>
+
+            <div id="cotent_center_bottom">
+                <span>
+                    <span id="content_center_bottom_text"> <span
+                            style="font-size: xx-large; color: #3ED44D;">&bullet;</span>Christian Scott</span>
+                    <img src="Image/img2.png" style="border-radius: 4%;">
+                </span>
+                <span>
+                    <span id="content_center_bottom_text"> <span
+                            style="font-size: xx-large; color: #3ED44D;">&bullet;</span>Deborah Chu</span>
+                    <img src="Image/img1.png" style="border-radius: 4%;">
+                </span>
+                <span>
+                    <span id="content_center_bottom_text"> <span
+                            style="font-size: xx-large; color: #3ED44D;">&bullet;</span>Jordan Nieves</span>
+                    <img src="Image/img.png" style="border-radius: 4%;">
+                </span>
+            </div>
+            <div id="button_center_footer">
+                <div
+                    style="display: flex; justify-content: space-between; width: 495px; margin-left: 20px; margin-top: 20px;">
+                    <img src="Icon/mic_grey_color.png" alt="">
+                    <img src="Icon/cam_color.png" alt="">
+                    <img src="Icon/speaker_grey_color.png" alt="">
+                    <div id="end_meeting">
+                        End meeting
+                    </div>
+                    <img src="Icon/Button 2179.png" alt="">
+                    <img src="Icon/share.png" alt="">
+                    <img src="Icon/....png" alt="">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Right Side -->
+        <div id="right_side"></div>
+    </div>
+</body>
+
+</html>
