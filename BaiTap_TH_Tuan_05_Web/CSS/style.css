@@ -1,0 +1,31 @@
+#header {
+    height: 70px;
+    width: 1800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #F3F3F4;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+}
+
+#content {
+    height: 1000px;
+    width: 1365px;
+    background-color: lightblue;
+    margin-left: 250px;
+    margin-top: 30px;
+}
+
+#footer {
+    height: 300px;
+    width: 1200px;
+    background-color: green;
+}
