@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {
+            height: 100px;
+            width: 1300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 21px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-bottom: 2px solid #F3F3F4;
+        }
+        
+        input::placeholder {
+            position: absolute;
+            left: 30px;
+            top: 5px;
+        }
+        
+        #content {
+            height: 700px;
+            width: 1200px;
+            background-color: blue;
+        }
+        
+        #footer {
+            height: 300px;
+            width: 1200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div style="display: flex; flex-direction: row; justify-content: space-around; width: 800px; align-items: center;">
+            <img src="Image/Image 1710.png" width="120px" height="45px">
+            <div style="color: #00BDD6;">Home</div>
+            <div>Promotions</div>
+            <div>Best-sellers</div>
+            <div>New releases</div>
+            <div>Support</div>
+        </div>
+        <div style="display: flex; align-items: center; width: 400px; flex-direction: row; justify-content: space-around;">
+            <div>
+                <input type="text" placeholder="Search..." style="width: 250px; height: 23px; background-color: #F3F4F6; background-image: url(Icon/Kinh_Lup.png); background-repeat: no-repeat; background-position: 10px ">
+            </div>
+            <img src="Icon\Bell 1.png" alt="">
+            <img src="Icon\Shopping cart simple 1.png" alt="">
+            <img src="Avatar/Avatar 758.png" alt="">
+        </div>
+    </div>
+
+    <div id="content"></div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
