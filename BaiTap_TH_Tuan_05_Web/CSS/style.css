@@ -1,3 +1,8 @@
+#flexCotainer {
+    display: flex;
+    flex-direction: column;
+}
+
 #header {
     height: 70px;
     width: 1800px;
@@ -12,26 +17,18 @@
 
 input::placeholder {
     position: absolute;
-    left: 30px;
-    top: 12px;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 15px;
 }
 
 #content {
-    height: 2130px;
+    height: 2430px;
     width: 1365px;
     background-color: white;
     margin-left: 250px;
     margin-top: 30px;
-}
-
-#footer {
-    height: 300px;
-    width: 1800px;
-    margin-top: 10px;
-    border-bottom: 1px solid #F3F3F4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #content_choose_item {
@@ -159,4 +156,86 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#footer {
+    height: 650px;
+    width: 1850px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #F3F3F4;
+    padding-top: 90px;
+}
+
+#inputEmail {
+    height: 35px;
+    width: 320px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#buttonSubscribe {
+    background-color: #00BDD6;
+    color: white;
+    height: 35px;
+    width: 120px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#informationList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    margin-top: 40px;
+}
+
+#informationLabel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#informationText {
+    margin-top: -2px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.72);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1450px;
+    margin-top: 90px;
+    align-items: center;
+}
+
+#language {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #F3F4F6;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+
+}
+
+#iconSize {
+    width: 44px;
+    height: 44px;
 }
