@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <div id="displayTime">
+                00:00:00
+        </div>
+        <button onclick="runClock()">Start</button>
+        <!--onclick sẽ thực hiện hàm mỗi khi nút được bấm -->
+        <button onclick="stopClock()">End</button>
+        <button onclick="resetClock()">Reset</button>
+        <script>
+                var s = 0;
+                var m = 0;
+                var h = 0;
+                var timer = null;
+                function runClock() {
+                        timer = setInterval(timerDisplay, 1000);
+                }
+                function stopClock() {
+                        clearInterval(timer);
+                }
+                function resetClock() {
+                        clearInterval(timer);
+                        s = 0;
+                        m = 0;
+                        h = 0;
+                        document.getElementById("displayTime").innerHTML = "00:00:00";
+                }
+                function timerDisplay() {
+                        // h là giờ, m là phút, s là giây
+                        ++s;
+                        if (s == 60) {
+                                m++;
+                                s = 0;
+                                if (m == 60) {
+                                        h++;
+                                        m = 0;
+                                }
+                        }
+                        let second = s < 10 ? "0" + s : s
+                        let minute = m < 10 ? "0" + m : m
+                        let hour = h < 10 ? "0" + h : h
+                        document.getElementById("displayTime").innerHTML = hour + ":" + minute + ":" + second;
+                }
+        </script>
+</body>
+
+</html>
