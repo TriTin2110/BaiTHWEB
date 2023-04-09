@@ -1,0 +1,47 @@
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+}
+
+#flexContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        margin-top: 120px;
+        width: 205px;
+
+}
+
+#screen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        color: white;
+        width: 200px;
+        height: 30px;
+}
+
+#layoutButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: orange;
+        width: 205px;
+        height: 25px;
+}
+
+#button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 20px;
+}
