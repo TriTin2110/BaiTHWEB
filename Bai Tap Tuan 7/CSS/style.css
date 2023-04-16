@@ -119,101 +119,50 @@ button {
         color: #9398A2;
 }
 
-#footer {
-        margin-top: 97px;
+#buttonListBottom {
         background-color: #1D2128;
-        height: 380px;
-        display: flex;
-        flex-direction: row;
-        width: 1442px;
-        justify-content: space-between;
-}
-
-#footer_left_side {
-        font-weight: 500;
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 92px;
-        margin-top: 100px;
-        color: #DEE1E6;
-        width: 150px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-#footer_label_left_side {
-        font-size: 23px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#footer_container_left_side {
-        display: flex;
-        flex-direction: row;
-}
-
-#footer_left_content {
+        color: white;
         margin-top: 20px;
-        margin-left: -111px;
 }
 
-#select_option {
+#changeLanguage {
+        background-color: #1D2128;
+        color: white;
+        width: 140px;
+        height: 40px;
+        padding-left: 10px;
+        border: 1px solid white;
         border-radius: 5px;
-        font-size: 15px;
-        padding-left: 7px;
-        height: 36px;
-        width: 128px;
+}
+
+#inputEmail {
+        background-image: url(../HinhAnh/Icon/MailBox.jpg);
+        background-repeat: no-repeat;
         background-color: #1D2128;
-        color: #DEE1E6;
-        border: 1px solid #DEE1E6;
-}
-
-#footer_container_right_side {
-        margin-top: 100px;
-        margin-right: 130px;
-}
-
-#footer_label_right_side {
-        color: #DEE1E6;
-        font-size: 25px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-#footer_right_content {
-        color: #DEE1E6;
-        font-size: 17px;
-        margin-top: 20px;
-}
-
-#footer_right_text_box {
-        color: #DEE1E6;
-        border: 1px solid #DEE1E6;
+        padding-left: 55px;
+        background-position: 17px 14px;
+        border: 1px solid white;
+        color: white;
+        height: 50px;
+        width: 285px;
+        padding-top: -10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
         border-right: none;
-        border-top-left-radius: 7px;
-        border-bottom-left-radius: 7px;
-        width: 208px;
-        height: 47px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
 }
 
-#button_subscribe {
-        color: #DEE1E6;
+#Subscribe-btn {
+        margin-top: 1px;
+        height: 51px;
+        width: 100px;
         background-color: #459D7A;
-        font-size: 15px;
-        height: 59px;
-        width: 128px;
-        margin-left: -11px;
-        border: solid #1D2128;
-        border-top-right-radius: 7px;
-        border-bottom-right-radius: 7px;
-        border-left: none;
+        color: white;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
 }
 
-#footer_source {
-        margin-top: 30px;
-        color: #CBCED3;
-        font-size: 12px;
-        font-family: Arial, Helvetica, sans-serif;
+#policies {
+        background-color: #1D2128;
+        color: white;
+        font-size: 13px;
 }
