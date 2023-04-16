@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+
+<body style="display: flex; flex-direction: column; width: 1440px;" class="d-flex justify-content-center">
+
+    <!-- Menu -->
+    <div class="d-flex justify-content-evenly align-items-center" style="width: 1440px;">
+        <div class="d-flex justify-content-between align-items-center" style="width: 1240px; height: 50px;">
+            <div class="d-flex align-items-center justify-content-evenly" style="width: 400px;">
+                <a href="#" id="tag-a">Shop</a>
+                <a href="#" id="tag-a">Offers</a>
+                <a href="#" id="tag-a">Our story</a>
+                <a href="#" id="tag-a">Blog</a>
+            </div>
+            <div>
+                <img src="../HinhAnh/Icon/logo.png" width="150px" height="47px">
+            </div>
+            <div style="width: 360px;">
+                <div class="d-flex justify-content-between align-items-center">
+                    <button>
+                        <input type="text" width="260px" class="form-control" placeholder="Search product">
+                    </button>
+                    <button class="col-auto"><img src="../HinhAnh/Icon/Cart.PNG" alt="empty" width="18px" height="18px">
+                    </button>
+                    <a href="#" class="col-auto" id="tag-a">Cart (0)</a>
+                    <button><img src="../HinhAnh/Icon/User.PNG" width="18px" height="17px">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="image_bottom">
+        <img src="../HinhAnh/IMG/Capture.PNG" width="1442px" height="392px">
+        <div>
+            <div class="image_bottom_menu">
+                <b>
+                    Gift for your skin
+                    <p style="font-size: 21px; margin-top: 6px; font-weight: 400;">Aliquip fugiat ipsum nostrud ex et eu
+                        incididunt quis minim dolore excepteur voluptate</p>
+                </b>
+            </div>
+        </div>
+    </div>
+
+    <div id="sort_by_option">
+        <div class="d-flex justify-content-between align-items-center" style="width: 400px;">
+            <button class="d-flex justify-content-center align-items-center" id="allProduct-btn">
+                All Products</button>
+            <a href="#" id="tag-a" style="color: #459D7A; font-weight: 400;">Face</a>
+            <a href="#" id="tag-a" style="color: #459D7A; font-weight: 400;">Body</a>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center" style="width: 300px;">
+            <input type="text" class="form-control" placeholder="Search product">
+            <button class="d-flex flex">Sort by <img src="../HinhAnh/Icon/IconList.jpg"
+                    style="margin-left: 10px;"></button>
+        </div>
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div id="product_list">
+        <table>
+            <tr>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img
+                        src="../HinhAnh/IMG/Image 1 (1).png"></td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img
+                        src="../HinhAnh/IMG/Image 1 (2).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img
+                        src="../HinhAnh/IMG/Image 1 (3).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note">Best-seller</span> <img
+                        src="../HinhAnh/IMG/Image 1 (4).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+            <!-- Hàng thứ 1 -->
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$32
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$22
+                        <p id="pruduct_old_price">$28</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$18
+                        <p id="pruduct_old_price">$26</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$48
+                        <p id="pruduct_old_price">$56</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Hàng thứ 2 -->
+            <tr style="margin-top: 101px;">
+                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (5).png"></td>
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="../HinhAnh/IMG/Image 1 (6).png" alt="">
+                </td>
+                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (7).png" alt="">
+                </td>
+                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (8).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$31
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$40
+                        <p id="pruduct_old_price">$48</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$26
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$18
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Hàng thứ 3 -->
+            <tr style="margin-top: 101px;">
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="../HinhAnh/IMG/Image 1 (9).png"></td>
+                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (10).png" alt="">
+                </td>
+                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (11).png" alt="">
+                </td>
+                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
+                        src="../HinhAnh/IMG/Image 1 (12).png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+                <td>
+                    <div id="product_list_label">Product title</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+
+                <td>
+                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+
+                </td>
+            </tr>
+            <tr style="float: left; margin-left: -7px; width: 1210px;">
+                <td>
+                    <div id="pruduct_current_price">$52
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$47
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$44
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+                <td>
+                    <div id="pruduct_current_price">$32
+                        <p id="pruduct_old_price">$42</p>
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Số trang web -->
+    <div id="page_number">
+        <div>&#60 </div>
+        <div>1</div>
+        <div
+            style="color: #7CBAA1; background-color: #F4FAF8; width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
+            2</div>
+        <div>3</div>
+        <div>4</div>
+        <div> ></div>
+    </div>
+    <div id="footer">
+
+        <div id="footer_container_left_side">
+            <!-- Cột thứ 1 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side">Abort</div>
+                <div style="margin-top: 20px;">Home</div>
+                <div style="margin-top: 20px;">Shop</div>
+                <div style="margin-top: 20px;">Our story</div>
+                <div style="margin-top: 20px;">Blog</div>
+                <select id="select_option" name="Country" size="1" style="margin-top: 20px;">
+                    <option value="English">English</option>
+                    <option value="Vietnamese">Tiếng Việt</option>
+                </select>
+            </div>
+
+            <!-- Cột thứ 2 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side" style="margin-left: -111px;">Help</div>
+                <div id="footer_left_content">Shipping & Returns</div>
+                <div id="footer_left_content">Track Order</div>
+                <div id="footer_left_content">FAQs</div>
+            </div>
+
+            <!-- Cột thứ 3 -->
+            <div id="footer_left_side" style="margin-left: 128px;">
+                <div id="footer_label_left_side" style="margin-left: -215px;">Contact</div>
+                <div style="margin-top: 20px; margin-left: -215px;">Phone:</div>
+                <b style="margin-top: 20px; margin-left: -215px;">(+1) 123 456 7893</b>
+                <div style="margin-top: 20px; margin-left: -215px;">Email:</div>
+                <b style="margin-top: 20px; margin-left: -215px;">name@email.com</b>
+            </div>
+        </div>
+
+        <!-- Nội dung bên phải footer -->
+        <div id="footer_container_right_side">
+            <div id="footer_label_right_side">Receive new promotions</div>
+            <div id="footer_right_content">Duis ea tempor commodo amet reprehende</div>
+            <div id="footer_right_content"><input id="footer_right_text_box" type="text"
+                    style="display: inline;background-image: url(MailBox.jpg); background-repeat: no-repeat; background-color: #1D2128; background-size: 22px 19px; background-position: 20px 16px; padding-left: 55px;"
+                    placeholder="Input your email">
+                <span><button id="button_subscribe">Subscribe</button></span>
+            </div>
+            <div style="margin-top: 30px;">
+                <img src="../HinhAnh/Icon/Twitter 1.png" style="margin-right: 6px;">
+                <img src="../HinhAnh/Icon/Facebook 1.png" style="margin-right: 6px;">
+                <img src="../HinhAnh/Icon/LinkedIn 1.png" style="margin-right: 6px;">
+                <img src="../HinhAnh/Icon/YouTube 1.png" style="margin-right: 6px;">
+            </div>
+            <div id="footer_source">© 2022 Brand, Inc. &#8226 Privacy &#8226 Terms &#8226 Sitemap</div>
+        </div>
+    </div>
+</body>
+
+</html>

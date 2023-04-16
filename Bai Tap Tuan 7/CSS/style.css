@@ -1,0 +1,260 @@
+#tag-a {
+        color: #797E87;
+        text-decoration: none;
+        font-weight: 500;
+}
+
+input::placeholder {
+        color: #E8EAED;
+        font-size: 15px;
+}
+
+button {
+        background-color: #FFFFFF;
+        border: none;
+}
+
+#image_bottom {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 55px;
+        margin-top: 4px;
+        color: #323842;
+}
+
+.image_bottom_menu {
+        margin-top: -300px;
+        margin-left: 128px;
+        display: flex;
+        width: 450px;
+}
+
+#sort_by_option {
+        font-weight: 400;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 63px;
+        margin-left: 128px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 1237px;
+}
+
+/* Những nút lựa chọn bên trái */
+#sort_content_left {
+        width: 185px;
+        height: 50px;
+        color: #459D7A;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+#allProduct-btn {
+        background-color: #459D7A;
+        color: white;
+        border-radius: 5px;
+        width: 150px;
+        height: 50px;
+}
+
+#sort_content_right {
+        width: 183px;
+        height: 50px;
+        color: #459D7A;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+
+#product_list {
+        margin-top: 53px;
+        margin-left: 128px;
+        width: 300px;
+}
+
+#product_image {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 4px;
+        margin-left: 6px;
+}
+
+#product_note {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        right: 42px;
+        top: 14px;
+        background-color: #FFC970;
+        width: 78px;
+        height: 28px;
+        border-radius: 10px;
+        color: #956518;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+}
+
+#product_list_label {
+        width: 298px;
+        font-size: 23px;
+        font-weight: bold;
+        color: #3A3C40;
+}
+
+#product_list_description {
+        color: #34373B;
+        width: 298px;
+}
+
+#pruduct_current_price {
+        font-weight: bold;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 298px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif
+}
+
+#pruduct_old_price {
+        color: #B7BAC1;
+        font-weight: 100;
+        margin-left: 8px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif
+}
+
+#buy_icon {
+        position: absolute;
+        margin-left: 226px;
+}
+
+tr {
+        display: flex;
+        flex-direction: row;
+        margin-left: -10px;
+        justify-content: space-around;
+}
+
+td {
+        width: 295px;
+}
+
+#page_number {
+        margin-top: 95px;
+        margin-left: 15cm;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 267px;
+}
+
+#footer {
+        margin-top: 97px;
+        background-color: #1D2128;
+        height: 380px;
+        display: flex;
+        flex-direction: row;
+        width: 1442px;
+        justify-content: space-between;
+}
+
+#footer_left_side {
+        font-weight: 500;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 92px;
+        margin-top: 100px;
+        color: #DEE1E6;
+        width: 150px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#footer_label_left_side {
+        font-size: 23px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footer_container_left_side {
+        display: flex;
+        flex-direction: row;
+}
+
+#footer_left_content {
+        margin-top: 20px;
+        margin-left: -111px;
+}
+
+#select_option {
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 7px;
+        height: 36px;
+        width: 128px;
+        background-color: #1D2128;
+        color: #DEE1E6;
+        border: 1px solid #DEE1E6;
+}
+
+#footer_container_right_side {
+        margin-top: 100px;
+        margin-right: 130px;
+}
+
+#footer_label_right_side {
+        color: #DEE1E6;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#footer_right_content {
+        color: #DEE1E6;
+        font-size: 17px;
+        margin-top: 20px;
+}
+
+#footer_right_text_box {
+        color: #DEE1E6;
+        border: 1px solid #DEE1E6;
+        border-right: none;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+        width: 208px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+#button_subscribe {
+        color: #DEE1E6;
+        background-color: #459D7A;
+        font-size: 15px;
+        height: 59px;
+        width: 128px;
+        margin-left: -11px;
+        border: solid #1D2128;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border-left: none;
+}
+
+#footer_source {
+        margin-top: 30px;
+        color: #CBCED3;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+}
