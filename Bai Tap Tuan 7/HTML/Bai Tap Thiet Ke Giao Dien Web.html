@@ -54,300 +54,355 @@
         </div>
     </div>
 
-    <div id="sort_by_option">
-        <div class="d-flex justify-content-between align-items-center" style="width: 400px;">
+    <div class="d-flex justify-content-between align-items-center" id="sort_by_option">
+        <div class="d-flex justify-content-between align-items-center" style="width: 390px;">
             <button class="d-flex justify-content-center align-items-center" id="allProduct-btn">
                 All Products</button>
             <a href="#" id="tag-a" style="color: #459D7A; font-weight: 400;">Face</a>
             <a href="#" id="tag-a" style="color: #459D7A; font-weight: 400;">Body</a>
         </div>
 
-        <div class="d-flex justify-content-between align-items-center" style="width: 300px;">
-            <input type="text" class="form-control" placeholder="Search product">
-            <button class="d-flex flex">Sort by <img src="../HinhAnh/Icon/IconList.jpg"
-                    style="margin-left: 10px;"></button>
+        <div class="d-flex justify-content-between align-items-center" style="width: 340px;">
+            <input type="text" class="form-control" style="width: 220px;" placeholder="Search product">
+            <button class="d-flex align-items-center justify-content-center" id="sortBy-btn">Sort
+                by
+                <img src="../HinhAnh/Icon/IconList.jpg" style="margin-left: 10px;"></button>
         </div>
     </div>
 
     <!-- Danh sách sản phẩm -->
-    <div id="product_list">
-        <table>
-            <tr>
-                <td id="product_image"><span id="product_note">Best-seller</span> <img
-                        src="../HinhAnh/IMG/Image 1 (1).png"></td>
-                <td id="product_image"><span id="product_note">Best-seller</span> <img
-                        src="../HinhAnh/IMG/Image 1 (2).png" alt="">
-                </td>
-                <td id="product_image"><span id="product_note">Best-seller</span> <img
-                        src="../HinhAnh/IMG/Image 1 (3).png" alt="">
-                </td>
-                <td id="product_image"><span id="product_note">Best-seller</span> <img
-                        src="../HinhAnh/IMG/Image 1 (4).png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+    <div id="product_list" class="d-flex flex-column">
 
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+        <!-- Hàng thứ 1 -->
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Cột 1 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusBestSeller">Best-seller</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (1).png" style="border-radius: 5px;"></button>
+                </div>
 
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-            </tr>
-            <!-- Hàng thứ 1 -->
-            <tr style="float: left; margin-left: -7px; width: 1210px;">
-                <td>
-                    <div id="pruduct_current_price">$32
-                        <p id="pruduct_old_price">$42</p>
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$32
+                        </div>
+                        <div id="pruduct_old_price">
+                            $42</div>
                     </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$22
-                        <p id="pruduct_old_price">$28</p>
+                    <button class="d-flex align-items-center" style="width: 50px;">
                         <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusBestSeller">Best-seller</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (2).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$22
+                        </div>
+                        <div id="pruduct_old_price">
+                            $28</div>
                     </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$18
-                        <p id="pruduct_old_price">$26</p>
+                    <button class="d-flex align-items-center" style="width: 50px;">
                         <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusBestSeller">Best-seller</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (3).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$18
+                        </div>
+                        <div id="pruduct_old_price">
+                            $26</div>
                     </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$48
-                        <p id="pruduct_old_price">$56</p>
+                    <button class="d-flex align-items-center" style="width: 50px;">
                         <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cột 4 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusBestSeller">Best-seller</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (4).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$48
+                        </div>
+                        <div id="pruduct_old_price">
+                            $56</div>
                     </div>
-                </td>
-            </tr>
-
-            <!-- Hàng thứ 2 -->
-            <tr style="margin-top: 101px;">
-                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (5).png"></td>
-                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
-                        src="../HinhAnh/IMG/Image 1 (6).png" alt="">
-                </td>
-                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (7).png" alt="">
-                </td>
-                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (8).png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-            </tr>
-
-            <tr style="float: left; margin-left: -7px; width: 1210px;">
-                <td>
-                    <div id="pruduct_current_price">$31
+                    <button class="d-flex align-items-center" style="width: 50px;">
                         <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$40
-                        <p id="pruduct_old_price">$48</p>
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$26
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$18
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-            </tr>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-            <!-- Hàng thứ 3 -->
-            <tr style="margin-top: 101px;">
-                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
-                        src="../HinhAnh/IMG/Image 1 (9).png"></td>
-                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (10).png" alt="">
-                </td>
-                <td id="product_image"><img src="../HinhAnh/IMG/Image 1 (11).png" alt="">
-                </td>
-                <td id="product_image"><span id="product_note" style="width: 50px;">New</span> <img
-                        src="../HinhAnh/IMG/Image 1 (12).png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-                <td>
-                    <div id="product_list_label">Product title</div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
+        <!-- Hàng thứ 2 -->
+        <div class="d-flex justify-content-between align-items-center" style="margin-top: 40px;">
+            <!-- Côt thứ 1 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;">
+                    <button><img src="../HinhAnh/IMG/Image 1 (5).png" style="border-radius: 5px;"></button>
+                </div>
 
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-
-                <td>
-                    <div id="product_list_description">Labore sint ipsum dolore mollit</div>
-
-                </td>
-            </tr>
-            <tr style="float: left; margin-left: -7px; width: 1210px;">
-                <td>
-                    <div id="pruduct_current_price">$52
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$31
+                        </div>
                     </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$47
-                        <p id="pruduct_old_price">$42</p>
+                    <button class="d-flex align-items-center" style="width: 50px;">
                         <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$44
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-                <td>
-                    <div id="pruduct_current_price">$32
-                        <p id="pruduct_old_price">$42</p>
-                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <!-- Số trang web -->
-    <div id="page_number">
-        <div>&#60 </div>
-        <div>1</div>
-        <div
-            style="color: #7CBAA1; background-color: #F4FAF8; width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center;">
-            2</div>
-        <div>3</div>
-        <div>4</div>
-        <div> ></div>
-    </div>
-    <div id="footer">
-
-        <div id="footer_container_left_side">
-            <!-- Cột thứ 1 -->
-            <div id="footer_left_side" style="margin-left: 128px;">
-                <div id="footer_label_left_side">Abort</div>
-                <div style="margin-top: 20px;">Home</div>
-                <div style="margin-top: 20px;">Shop</div>
-                <div style="margin-top: 20px;">Our story</div>
-                <div style="margin-top: 20px;">Blog</div>
-                <select id="select_option" name="Country" size="1" style="margin-top: 20px;">
-                    <option value="English">English</option>
-                    <option value="Vietnamese">Tiếng Việt</option>
-                </select>
+                    </button>
+                </div>
             </div>
 
             <!-- Cột thứ 2 -->
-            <div id="footer_left_side" style="margin-left: 128px;">
-                <div id="footer_label_left_side" style="margin-left: -111px;">Help</div>
-                <div id="footer_left_content">Shipping & Returns</div>
-                <div id="footer_left_content">Track Order</div>
-                <div id="footer_left_content">FAQs</div>
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusNew">New</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (6).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$40
+                        </div>
+                        <div id="pruduct_old_price">
+                            $48</div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
             </div>
 
-            <!-- Cột thứ 3 -->
-            <div id="footer_left_side" style="margin-left: 128px;">
-                <div id="footer_label_left_side" style="margin-left: -215px;">Contact</div>
-                <div style="margin-top: 20px; margin-left: -215px;">Phone:</div>
-                <b style="margin-top: 20px; margin-left: -215px;">(+1) 123 456 7893</b>
-                <div style="margin-top: 20px; margin-left: -215px;">Email:</div>
-                <b style="margin-top: 20px; margin-left: -215px;">name@email.com</b>
+            <!-- Côt thứ 3 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;">
+                    <button><img src="../HinhAnh/IMG/Image 1 (7).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$26
+                        </div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Côt thứ 4 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;">
+                    <button><img src="../HinhAnh/IMG/Image 1 (8).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$18
+                        </div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Nội dung bên phải footer -->
-        <div id="footer_container_right_side">
-            <div id="footer_label_right_side">Receive new promotions</div>
-            <div id="footer_right_content">Duis ea tempor commodo amet reprehende</div>
-            <div id="footer_right_content"><input id="footer_right_text_box" type="text"
-                    style="display: inline;background-image: url(MailBox.jpg); background-repeat: no-repeat; background-color: #1D2128; background-size: 22px 19px; background-position: 20px 16px; padding-left: 55px;"
-                    placeholder="Input your email">
-                <span><button id="button_subscribe">Subscribe</button></span>
+        <!-- Hàng thứ 3 -->
+        <div class="d-flex justify-content-between align-items-center" style="margin-top: 40px;">
+            <!-- Côt thứ 1 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusNew">New</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (9).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$52
+                        </div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
             </div>
-            <div style="margin-top: 30px;">
-                <img src="../HinhAnh/Icon/Twitter 1.png" style="margin-right: 6px;">
-                <img src="../HinhAnh/Icon/Facebook 1.png" style="margin-right: 6px;">
-                <img src="../HinhAnh/Icon/LinkedIn 1.png" style="margin-right: 6px;">
-                <img src="../HinhAnh/Icon/YouTube 1.png" style="margin-right: 6px;">
+
+            <!-- Cột thứ 2 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;">
+                    <button><img src="../HinhAnh/IMG/Image 1 (10).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$47
+                        </div>
+                        <div id="pruduct_old_price">
+                            $42</div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
             </div>
-            <div id="footer_source">© 2022 Brand, Inc. &#8226 Privacy &#8226 Terms &#8226 Sitemap</div>
+
+            <!-- Côt thứ 3 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;">
+                    <button><img src="../HinhAnh/IMG/Image 1 (11).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$44
+                        </div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Côt thứ 4 -->
+            <div class="d-flex flex-column" style="height: 500px;">
+                <!-- Ảnh sản phẩm -->
+                <div style="margin-left: -6px;"><button id="productStatusNew">New</button>
+                    <button><img src="../HinhAnh/IMG/Image 1 (12).png" style="border-radius: 5px;"></button>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="d-flex flex-column">
+                    <button id="product_list_label">Product title</button>
+                    <button id="product_list_description">Labore sint ipsum dolore mollit</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center"
+                    style="margin-top: 10px; width: 268px;">
+                    <div class="d-flex align-items-center justify-content-between" style="width: 85px;">
+                        <div id="pruduct_current_price">$32
+                        </div>
+                        <div id="pruduct_old_price">
+                            $42</div>
+                    </div>
+                    <button class="d-flex align-items-center" style="width: 50px;">
+                        <img src="../HinhAnh/Icon/Button 1 (2).png" id="buy_icon">
+                    </button>
+                </div>
+            </div>
         </div>
+
+        <!-- Page number -->
+        <div style="width: 1335px; margin-top: 40px;" class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-between align-items-center" style="width: 250px;">
+                <button id="page_number">&lt;</button>
+                <button id="page_number">1</button>
+                <button class="d-flex align-items-center justify-content-center"
+                    style="color: #54A584; background-color: #F4FAF8; border-radius: 50%; width: 30px; height: 30px;">2
+                </button>
+                <button id="page_number">3</button>
+                <button id="page_number">4</button>
+                <button id="page_number">&gt;</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="background-dark">
+
     </div>
 </body>
 
