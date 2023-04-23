@@ -10,6 +10,85 @@
         <link rel="stylesheet" href="../CSS/bootstrap.min.css">
         <script src="../JS/jquery-3.6.4.min.js"></script>
         <script src="../JS/bootstrap.min.js"></script>
+
+        <!-- <script>
+                $(document).ready(function () {
+                        $("#btnOpen").click(function () {
+                                $("#myModal").modal()
+                        })
+                })
+        </script> -->
+        <script>
+                function kiemTraMaBN() {
+                        const regID = /^BN-([A-Z]){5}$/;
+                        var maBN = document.getElementById("maBenhNhan").value;
+                        let resultID = regID.test(maBN);
+                        if (!resultID) {
+                                document.getElementById("baoLoiBN").innerHTML = "Mã bệnh nhân không đúng với định dạng";
+                                return false;
+                        }
+                        else {
+                                document.getElementById("baoLoiBN").innerHTML = "";
+                                return true;
+                                submit()
+                        }
+
+                }
+                function kiemTraMK() {
+                        const regMK = /^(.){6}$/
+                        var mk = document.getElementById("matKhau").value;
+                        let resultMK = regMK.test(mk);
+                        if (!resultMK) {
+                                document.getElementById("baoLoiMK").innerHTML = "Mật khẩu không đúng với định dạng";
+                                return false;
+                        }
+                        else {
+                                document.getElementById("baoLoiMK").innerHTML = "";
+                                return true;
+                                submit()
+                        }
+                }
+                function kiemTraNgay() {
+                        let d = new Date().toJSON().slice(0, 10);
+                        var ngayKham = document.getElementById("ngay").value;
+                        if (ngayKham < d) {
+                                document.getElementById("baoLoiNgay").innerHTML = "Ngày khám phải sau ngày hiện tại";
+                                return false;
+                        }
+                        else {
+                                document.getElementById("baoLoiNgay").innerHTML = "";
+                                return true;
+                                submit()
+                        }
+                }
+
+                function kiemTraLuaChon() {
+                        var checked = document.getElementById("dichVu");
+                        if (checked.checked == true) {
+                                document.getElementById("baoLoiDV").innerHTML = "Giá trị phụ thu tương ứng cho 1 loại dịch vụ là 500000 đồng"
+                                return true;
+                                submit()
+                        }
+                        else {
+                                document.getElementById("baoLoiDV").innerHTML = "Chưa chọn loại dịch vụ"
+                                return false;
+                        }
+                }
+
+                function submit() {
+                        kiemTraLuaChon();
+                        kiemTraNgay();
+                        kiemTraMK();
+                        kiemTraMaBN();
+                        if (kiemTraMK() == true && kiemTraNgay() == true && kiemTraMaBN() == true && kiemTraLuaChon() == true) {
+                                hideModal();
+                        }
+                }
+                function hideModal() {
+                        $("#myModal").modal('hide');
+                        alert("Đã đặt lịch thành công!");
+                }
+        </script>
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif;">
@@ -29,9 +108,128 @@
                                 <div class="d-flex justify-content-around align-items-center"
                                         style="width: 190px; margin-left: 20px;">
                                         <div><a href="#" class="nav-link text-secondary">Trang chủ</a></div>
-                                        <div><a href="#" class="nav-link text-secondary">Đặt lịch</a></div>
+                                        <div><a href="#" class="nav-link text-secondary" data-toggle="modal"
+                                                        data-target="#myModal" id="datLich">Đặt
+                                                        lịch</a></div>
                                 </div>
                         </div>
+
+                        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                                <div class="modal-dialog" role="document">
+                                        <div class="modal-content" style="height: 700px;">
+                                                <div class="modal-header">
+                                                        <h5 class="modal-title">Đặt lịch khám online</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                </div>
+                                                <div class="modal-body d-flex flex-column justify-content-between"
+                                                        style="height: 500px;">
+                                                        <!-- Mã bệnh nhân -->
+                                                        <div>
+                                                                <div><b>Mã bệnh nhân</b></div>
+                                                                <div class="form-inline">
+                                                                        <input class="form-control col-md-12"
+                                                                                placeholder="Ma benh nhan"
+                                                                                id="maBenhNhan">
+                                                                </div>
+                                                                <div class="text-danger">(*)BN-YYYYYY</div>
+                                                                <div>
+                                                                        <h6 id="baoLoiBN" style="color: red;"></h6>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Mật khẩu -->
+                                                        <div>
+                                                                <div><b>Mật khẩu</b></div>
+                                                                <div class="form-inline">
+                                                                        <input class="form-control col-md-12"
+                                                                                placeholder="Mat khau" id="matKhau">
+                                                                </div>
+                                                                <div class="text-danger">(*)</div>
+                                                                <div>
+                                                                        <h6 id="baoLoiMK" style="color: red;"></h6>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Ngày khám -->
+                                                        <div>
+                                                                <div><b>Ngày khám</b></div>
+                                                                <div class="form-inline">
+                                                                        <input type="date"
+                                                                                class="form-control col-md-12"
+                                                                                id="ngay">
+                                                                </div>
+                                                                <div class="text-danger">(*)</div>
+                                                                <h6 id="baoLoiNgay" style="color: red;"></h6>
+                                                        </div>
+
+                                                        <!-- Loại dịch vụ -->
+                                                        <div>
+                                                                <div><b>Loại dịch vụ</b></div>
+                                                                <div class="d-flex justify-content-around align-items-center"
+                                                                        style="font-size: 13px;">
+                                                                        <div><input type="checkbox" name="" id="dichVu"
+                                                                                        onclick="kiemTraLuaChon()">Khám
+                                                                                bệnh theo yêu cầu</div>
+                                                                        <div><input type="checkbox" id="dichVu"
+                                                                                        onclick="kiemTraLuaChon()">Điều
+                                                                                trị
+                                                                                ngoại trú
+                                                                        </div>
+                                                                        <div><input type="checkbox" id="dichVu"
+                                                                                        onclick="kiemTraLuaChon()">Bác
+                                                                                sĩ
+                                                                                theo yêu cầu
+                                                                        </div>
+                                                                </div>
+                                                                <div>
+                                                                        <h6 id="baoLoiDV" style="color: red;"></h6>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Chuyên khoa -->
+                                                        <div>
+                                                                <div><b>Chuyên khoa</b></div>
+                                                                <div class="form-inline">
+                                                                        <select class="form-control col-md-12" name=""
+                                                                                id="">
+                                                                                <option class="col-md-12" value="1">
+                                                                                        Ngoại tổng quát
+                                                                                </option>
+                                                                                <option value="2">Nhi</option>
+                                                                                <option value="3">Nội tổng quát</option>
+                                                                        </select>
+                                                                </div>
+                                                        </div>
+
+                                                        <!-- Đặt lịch -->
+                                                        <div style="position: relative; margin-top: 20px;">
+                                                                <button class="col-md-2 btn btn-secondary border-0"
+                                                                        onclick="submit()" type="submit"
+                                                                        style="background-color: #57C0DD; font-size: 14px;"
+                                                                        id="btnSubmit">Đặt
+                                                                        lịch</button>
+                                                                <div>
+                                                                        <h6 id="baoLoiSM" style="color: red;"></h6>
+                                                                </div>
+                                                        </div>
+
+
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary border-0"
+                                                                style="background-color: #57C0DD; font-size: 14px;"
+                                                                data-dismiss="modal">Close</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+
                 </div>
         </div>
 
