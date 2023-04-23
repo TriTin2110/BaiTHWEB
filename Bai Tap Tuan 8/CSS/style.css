@@ -10,3 +10,10 @@
         color: #92A5B6;
         font-size: 15px;
 }
+
+#listInfo {
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 10px;
+        width: 900px;
+}
